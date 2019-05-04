@@ -9,15 +9,19 @@ import { DialogService, MessagePopupService } from 'systelab-components/widgets/
 import { SystelabComponentsModule } from 'systelab-components';
 import { SystelabPreferencesModule } from 'systelab-preferences';
 import { SystelabTranslateModule } from 'systelab-translate';
+import { HttpClientModule } from '@angular/common/http';
+import { SampleComponentComponent } from './sample-component/sample-component.component';
 
 @NgModule({
 	declarations:    [
 		AppComponent,
-		SampleFormComponent
+		SampleFormComponent,
+		SampleComponentComponent
 	],
 	imports:         [
 		ReactiveFormsModule,
 		BrowserModule,
+		HttpClientModule,
 		BrowserAnimationsModule,
 		SystelabTranslateModule.forRoot(),
 		SystelabPreferencesModule.forRoot(),

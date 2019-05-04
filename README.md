@@ -17,3 +17,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Links
+
+Angular reactive forms: building custom form controls
+https://javascript-conference.com/blog/angular-reactive-forms-building-custom-form-controls/
+
+Custom Angular Reactive Forms: What I wish I knew
+https://medium.com/@narthur157/custom-angular-reactive-forms-what-i-wish-i-knew-v5-6-5b1c2f8e1974

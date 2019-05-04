@@ -17,6 +17,7 @@ export class SampleFormComponent implements OnInit {
 		this.profileForm = new FormGroup({
 			firstName: new FormControl(''),
 			lastName:  new FormControl(''),
+			gender:    new FormControl({id: 'M', description: 'COMMON_MALE'})
 		});
 	}
 
