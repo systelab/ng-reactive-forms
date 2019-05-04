@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <form [formGroup]="profileForm" class="pt-2">
+
+        <label class="slab-form-title">Section title</label>
+
+        <div class="row mt-1">
+            <label for="field-1" class="col-md-2 col-form-label text-truncate">Surname</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" id="field-1" name="field-1" formControlName="lastName">
+            </div>
+        </div>
+
+        <div class="row mt-1">
+            <label for="field-2a" class="col-md-2 col-form-label text-truncate">Name</label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="field-2a" name="field-2a" formControlName="firstName">
+            </div>
+            <label for="field-2b" class="col-md-2 col-form-label text-truncate">Gender</label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="field-2b" name="field-2b">
+            </div>
+        </div>
+        <div class="mt-5">
+            <button type="button" class="btn" (click)="go()">GO!!!</button>
+        </div>
+    </form>
+</div>
