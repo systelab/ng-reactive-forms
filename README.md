@@ -1,6 +1,6 @@
 # Reactive Forms
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.5. It is a simple repository to test the overlays in angular cdk 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.5. It is a simple repository to test the Angular Reactive forms.
 
 ## Development server
 
