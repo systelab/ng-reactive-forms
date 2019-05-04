@@ -24,5 +24,4 @@ export class ReactiveSampleFormComponent implements OnInit {
 	public go() {
 		console.log(this.profileForm.value);
 	}
-
 }

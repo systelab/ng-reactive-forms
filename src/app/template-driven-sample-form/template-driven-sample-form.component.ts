@@ -7,12 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemplateDrivenSampleFormComponent implements OnInit {
 
-	public patient = {'firstName': '', 'lastName': '', 'gender': {'id': 'M', 'description': 'COMMON_MALE'}};
+	public patient;
 
 	constructor() {
 	}
 
-	ngOnInit() {
+	public ngOnInit() {
+		this.patient = {'firstName': '', 'lastName': '', 'gender': {'id': 'M', 'description': 'COMMON_MALE'}};
 	}
 
+	public go() {
+		console.log(this.patient);
+	}
 }

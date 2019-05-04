@@ -1,9 +1,6 @@
 <div class="container-fluid">
-
     <form class="pt-2" #patientForm="ngForm">
-
         <label class="slab-form-title">Person search</label>
-
         <div class="row mt-1">
             <label for="field-1" class="col-md-2 col-form-label text-truncate">Surname</label>
             <div class="col-md-10">
@@ -22,7 +19,7 @@
             </div>
         </div>
         <div class="mt-5">
-            <button type="button" class="btn" (click)="go()" [disabled]="patientForm.status==='INVALID'">GO!!!</button>
+            <button type="button" class="btn" (click)="go()" [disabled]="!patientForm.form.valid">GO!!!</button>
         </div>
     </form>
 
