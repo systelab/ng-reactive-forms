@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
-	selector:    'app-sample-from',
-	templateUrl: './sample-form.component.html',
-	styleUrls:   ['./sample-form.component.scss']
+	selector:    'app-reactive-sample-from',
+	templateUrl: './reactive-sample-form.component.html',
+	styleUrls:   ['./reactive-sample-form.component.scss']
 })
-export class SampleFormComponent implements OnInit {
+export class ReactiveSampleFormComponent implements OnInit {
 
 	public profileForm: FormGroup
 

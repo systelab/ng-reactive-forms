@@ -2,18 +2,18 @@ import { Component, forwardRef } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
-	selector:    'app-sample-component',
-	templateUrl: './sample-component.component.html',
-	styleUrls:   ['./sample-component.component.scss'],
+	selector:    'app-reactive-sample-component',
+	templateUrl: './reactive-sample-component.component.html',
+	styleUrls:   ['./reactive-sample-component.component.scss'],
 	providers:   [
 		{
 			provide:     NG_VALUE_ACCESSOR,
-			useExisting: forwardRef(() => SampleComponentComponent),
+			useExisting: forwardRef(() => ReactiveSampleComponentComponent),
 			multi:       true
 		}
 	]
 })
-export class SampleComponentComponent implements ControlValueAccessor {
+export class ReactiveSampleComponentComponent implements ControlValueAccessor {
 
 	public id: string;
 	public description: string;
