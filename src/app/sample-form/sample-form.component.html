@@ -6,7 +6,7 @@
         <div class="row mt-1">
             <label for="field-1" class="col-md-2 col-form-label text-truncate">Surname</label>
             <div class="col-md-10">
-                <input type="text" class="form-control" id="field-1" name="field-1" formControlName="lastName">
+                <input type="text" class="form-control" id="field-1" name="field-1" formControlName="lastName" required>
             </div>
         </div>
 
@@ -21,11 +21,13 @@
             </div>
         </div>
         <div class="mt-5">
-            <button type="button" class="btn" (click)="go()">GO!!!</button>
+            <button type="button" class="btn" (click)="go()" [disabled]="profileForm.status==='INVALID'">GO!!!</button>
         </div>
     </form>
 
     <p class="mt-5">FormControl value is set to:</p>
     <p>{{profileForm.value| json}}</p>
-
+    <p>
+        Form Status: {{ profileForm.status }}
+    </p>
 </div>
