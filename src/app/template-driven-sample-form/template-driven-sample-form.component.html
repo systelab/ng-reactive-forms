@@ -4,18 +4,18 @@
         <div class="row mt-1">
             <label for="field-1" class="col-md-2 col-form-label text-truncate">Surname</label>
             <div class="col-md-10">
-                <input type="text" class="form-control" id="field-1" name="field-1" [(ngModel)]="patient.lastName" required>
+                <input type="text" class="form-control" id="field-1" name="field-1" [(ngModel)]="person.lastName" required>
             </div>
         </div>
 
         <div class="row mt-1">
             <label for="field-2a" class="col-md-2 col-form-label text-truncate">Name</label>
             <div class="col-md-4">
-                <input type="text" class="form-control" id="field-2a" name="field-2a" [(ngModel)]="patient.firstName" required>
+                <input type="text" class="form-control" id="field-2a" name="field-2a" [(ngModel)]="person.firstName" required>
             </div>
             <label class="col-md-2 col-form-label text-truncate">Gender</label>
             <div class="col-md-4">
-                <systelab-gender-select [(id)]="patient.gender.id" [(description)]="patient.gender.description"></systelab-gender-select>
+                <systelab-gender-select [(id)]="person.gender.id" [(description)]="person.gender.description"></systelab-gender-select>
             </div>
         </div>
         <div class="mt-5">
@@ -24,7 +24,7 @@
     </form>
 
     <p class="mt-5">FormControl value is set to:</p>
-    <p>{{patient| json}}</p>
+    <p>{{person| json}}</p>
     <p>
         Form Status: {{ patientForm.status }}
     </p>
